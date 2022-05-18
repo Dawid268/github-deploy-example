@@ -3,7 +3,7 @@ name: workflow name
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   build:
@@ -20,3 +20,6 @@ jobs:
         run: npm run build
         env:
           TEST: ${{ secrets.TEST }}
+      - name: Basic variable usage
+        run: |
+          echo $TEST
