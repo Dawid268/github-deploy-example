@@ -6,7 +6,7 @@ console.log(targetPath);
 
 const envConfigFile = `export const environment = {
    production: true,
-   testEnv: '${process.env.TEST}'
+   testEnv: '${process.env['TEST']}'
  };`
 ;
 console.log(envConfigFile);
