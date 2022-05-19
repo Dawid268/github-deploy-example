@@ -16,5 +16,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }} # see the Configuration section for how you can create secrets
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
+          folder: 'github-actions-example'
