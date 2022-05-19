@@ -23,3 +23,10 @@ jobs:
       - name: Basic variable usage
         run: |
           echo $TEST
+  name: Deploy 🚀
+    uses: JamesIves/github-pages-deploy-action@v4
+    with:
+      branch: gh-pages
+      folder: build
+      repositorty-name: JamesIves/lab
+      target-folder: public
